@@ -1,6 +1,6 @@
 #!/bin/bash
 # // PROJECT XDXL STORE
-url_izin="https://raw.githubusercontent.com/freetunnel/iz/main/admin"
+url_izin="https://raw.githubusercontent.com/AriSaputra1205/arisaputra/refs/heads/main/regis/admin"
 IP=$(curl -sS ipv4.icanhazip.com)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
@@ -17,16 +17,16 @@ checking_sc() {
     echo -e "   \033[0;33mYour VPS${NC} $IP \033[0;33mHas been Banned${NC}"
     echo -e "     \033[0;33mBuy access permissions for scripts${NC}"
     echo -e "             \033[0;33mContact Admin :${NC}"
-    echo -e "      \033[0;36mWhatsapp${NC} wa.me/6281927625651"
+    echo -e "      \033[0;36mWhatsapp${NC} wa.me/+6285279684327"
     echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
     exit
   fi
 }
 checking_sc
-# Token SatanFusionOfficial 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
-TOKEN="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"
+# Token SatanFusionOfficial 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
+TOKEN="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"
 today=`date -d "0 days" +"%Y-%m-%d"`
-git clone https://github.com/freetunnel/iz.git /root/ip/ &> /dev/null
+git clone https://github.com/AriSaputra1205/izin.git /root/ip/ &> /dev/null
 clear
 echo -e ""
 read -p "Input IP Address : " ip
@@ -42,14 +42,14 @@ read -p " Masukan waktu expired : " -e exp
 exp2=`date -d "${exp} days" +"%Y-%m-%d"`
 echo "### ${name} ${exp2} ${ip}" >> /root/iz/ip
 cd /root/iz
-git config --global user.email "ageng.an46@gmail.com" &> /dev/null
-git config --global user.name "freetunnel" &> /dev/null
+git config --global user.email "ariksaputra081205@gmail.com" &> /dev/null
+git config --global user.name "ARI TUNNELING" &> /dev/null
 rm -rf .git &> /dev/null
 git init &> /dev/null
 git add . &> /dev/null
 git commit -m register &> /dev/null
 git branch -M main &> /dev/null
-git remote add origin https://github.com/freetunnel/iz
-git push -f https://${TOKEN}@github.com/freetunnel/iz.git &> /dev/null
+git remote add origin https://github.com/AriSaputra1205/izin
+git push -f https://${TOKEN}@github.com/AriSaputra1205/izin.git &> /dev/null
 rm -rf /root/ip
 clear
