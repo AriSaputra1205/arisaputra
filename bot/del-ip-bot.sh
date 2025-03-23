@@ -1,6 +1,6 @@
 #!/bin/bash
-# Token SatanFusionOfficial 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
-    TOKEN="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"
+# Token SatanFusionOfficial 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
+    TOKEN="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"
     git clone https://github.com/freetunnel/iz /root/iz/ &> /dev/null
     clear
     echo ""
@@ -17,15 +17,15 @@
     sed -i "/^### $name $exp $ipdel/,/^},{/d" /root/iz/ip
     fi
     cd /root/iz
-    git config --global user.email "ageng.an46@gmail.com" &> /dev/null
-    git config --global user.name "freetunnel" &> /dev/null
+    git config --global user.email "ariksaputra081205@gmail.com" &> /dev/null
+    git config --global user.name "ARI VPN TUNNELING" &> /dev/null
     rm -rf .git &> /dev/null
     git init &> /dev/null
     git add . &> /dev/null
     git commit -m register &> /dev/null
     git branch -M main &> /dev/null
-    git remote add origin https://github.com/freetunnel/iz
-    git push -f https://${TOKEN}@github.com/freetunnel/iz.git &> /dev/null
+    git remote add origin https://github.com/AriSaputra1205/izin
+    git push -f https://${TOKEN}@github.com/AriSaputra1205/izin.git &> /dev/null
     rm -rf /root/iz
     clear
     sleep 1
