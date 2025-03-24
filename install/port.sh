@@ -12,13 +12,13 @@ LIGHT='\033[0;37m'
 # ==========================================
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
-IZIN=$( curl https://raw.githubusercontent.com/freetunnel/iz/main/ip | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/AriSaputra1205/izin/main/ip | grep $MYIP )
 if [ $MYIP = $MYIP ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/freetunnel1"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/tenkurivpnstore"
 exit 0
 fi
 clear
@@ -42,7 +42,7 @@ echo -e "${tyblue}|● Vless WS none TLS       : 80                  |${NC}"
 echo -e "${tyblue}|● Trojan WS none TLS      : 80                  |${NC}"
 echo -e "${tyblue}|● Shadowsocks WS none TLS : 80                  |${NC}"
 echo -e "${tyblue}|━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━|${NC}"
-echo -e "${tyblue}|           SCRIPT BY FREETUNNEL              |${NC}"
+echo -e "${tyblue}|           SCRIPT BY SUMATRA TUNNELING              |${NC}"
 echo -e "${tyblue}|━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━|${NC}"
 echo -e ""
 read -p " Select menu : " opt
